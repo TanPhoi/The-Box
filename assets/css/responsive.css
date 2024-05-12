@@ -1,0 +1,341 @@
+/* PC */
+@media (min-width: 992px) {
+  .responsive-tablet-mobile {
+    display: none;
+  }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 991.98px) {
+  /*============================ Header ============================*/
+  /* navbar */
+  .header__nav {
+    display: none;
+  }
+
+  /* move logo center */
+  .header__body-top {
+    position: relative;
+    padding: 30px 0;
+  }
+
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .menu-header__icon {
+    position: absolute;
+    top: 21px;
+    left: 23px;
+  }
+
+  .menu-overplay {
+    position: fixed;
+    background: #2947a94b;
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  .menu-checkbox:checked ~ .menu-overplay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* menu drawer */
+  .menu-drawer {
+    position: fixed;
+    padding: 60px;
+    inset: 0 40% 0 0;
+    z-index: 1;
+    background-color: #0a0f21;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-drawer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .img-logo {
+    width: 30px;
+    height: 34px;
+  }
+
+  .content-logo {
+    font-size: 2rem;
+  }
+
+  .ct-box {
+    font-size: 2rem;
+  }
+
+  .menu-drawer__close {
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  /* nav link */
+  #menu-drawer__navbar-list--mobile {
+    margin-top: 24px;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+  }
+
+  .header__nav-link {
+    display: block;
+    color: #ffffff;
+    transition: 0.5s;
+  }
+
+  .header__nav-link:hover {
+    padding: 6px;
+    background-color: #073ef54b;
+    border-radius: 10px;
+  }
+
+  /*============================ Reputation ============================*/
+  .reputation__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  /*============================ About ============================*/
+  .about {
+    padding: 20px 0px;
+  }
+
+  .about__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about__box {
+    position: static;
+    margin: 30px auto 0;
+  }
+
+  /*============================ Services ============================*/
+  .services__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  /*============================ Services ============================*/
+  .experience__body {
+    padding: 70px 0px 70px;
+  }
+
+  .experience__box-clients {
+    display: none;
+  }
+
+  .experience__box-completed {
+    display: none;
+  }
+
+  .experience__box-awards {
+    display: none;
+  }
+
+  .experience__box-business {
+    display: none;
+  }
+
+  .experience__body {
+    display: block;
+  }
+
+  .experience__heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .experience__desc {
+    width: 73%;
+    margin: 40px auto 0;
+    text-align: center;
+  }
+
+  .experience__btn {
+    margin: 50px auto 0;
+  }
+
+  /*============================ Ads ============================*/
+  .ads__body {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding: 40px;
+  }
+
+  .ads__heading {
+    text-align: center;
+  }
+
+  .ads__desc {
+    text-align: center;
+  }
+
+  /*============================ Project ============================*/
+  .projects__body {
+    flex-direction: column;
+  }
+
+  .projects__right {
+    margin-top: 20px;
+  }
+
+  .projects__list {
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 24px;
+  }
+
+  .projects__btn {
+    width: 209px;
+  }
+
+  .projects__dots {
+    gap: 10px;
+  }
+
+  .projects__dot {
+    width: 14px;
+    height: 14px;
+  }
+
+  .footer__row-top {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768.98px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .heading-lv4 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  .desc {
+    font-size: 1.8rem;
+  }
+
+  /*============================ Hero ============================*/
+  .hero__heading {
+    width: 100%;
+    font-size: 3.2rem;
+  }
+
+  .hero__box {
+    position: relative;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 190px;
+  }
+
+  .hero::before {
+    height: 80%;
+  }
+
+  /*============================ About ============================*/
+  .about__box {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .about__heading {
+    text-align: center;
+  }
+
+  .about__desc {
+    width: 100%;
+    text-align: center;
+    margin: 37px auto 0;
+  }
+
+  .about__btn {
+    margin: 40px auto 0;
+  }
+
+  /*============================ Experience ============================*/
+  .experience__heading {
+    font-size: 6.4rem;
+  }
+
+  /*============================ Services ============================*/
+  .services__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*============================ Projects ============================*/
+  .projects__btn {
+    width: 110px;
+    height: 54px;
+  }
+
+  .projects__dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  /*============================ Information ============================*/
+
+  .information__desc {
+    width: 100%;
+  }
+
+  .information__enter {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #message {
+    width: 100%;
+  }
+}
