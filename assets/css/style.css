@@ -160,7 +160,7 @@ a {
   top: 0;
   bottom: 0;
   width: 100%;
-  background-image: url(/assets/img/img_oregano_height.jpg);
+  background-image: url(/assets/img/img_hotel.jpg);
   background-size: cover;
   z-index: -1;
 }
@@ -547,7 +547,7 @@ a {
   top: 0;
   width: 100%;
   height: 300px;
-  background-image: url(/assets/img/img_ads.jpg);
+  background-image: url(/assets/img/img_building.jpg);
   background-size: cover;
   z-index: -1;
 }
