@@ -549,7 +549,6 @@ a {
   top: 0;
   width: 100%;
   height: 300px;
-  object-fit: cover;
   background-image: url(/assets/img/img_ads.jpg);
   background-size: cover;
   z-index: -1;
